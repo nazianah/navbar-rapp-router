@@ -54,6 +54,9 @@ nav.open {
 .navbar li a:hover {
     background-color: var(--color);
 }
+.mobile-only {
+    display: none !important; /* Hide by default */
+}
 
 
 /* Responsive styles */
@@ -105,4 +108,9 @@ nav.open {
         padding: 1rem 0;
     }
     
+    
+
+    ul.navbar.open .mobile-only {
+        display: inline !important; /* Show on mobile when menu is open */
+    }
 }
