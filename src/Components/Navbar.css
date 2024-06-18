@@ -1,0 +1,108 @@
+nav {
+    width: 50%;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+nav.open {
+    background-color: #fd7e14;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    height: 24px;
+    width: 24px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:  flex-start;
+    flex-grow: 1; /* Ensure the navbar items occupy the remaining space */
+    transition: all 0.3s ease;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 25px;
+   
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: var(--color);
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav{
+        width: 100%;
+    }
+    .logo{
+        padding-left: 20px;
+        
+        
+    }
+    .logo img{
+        max-height: 35px;
+    }
+    .navbar li a{
+        color: white;
+        font-size: 30px;
+    }
+    .menu-toggle {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        background-color: #fd7e14;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.open {
+        display: flex;
+        height: 100vh;
+        justify-content: flex-start;
+        border-left: 10px solid; 
+        border-image-slice: 1;
+        border-left-width: 10px;
+        border-image-source: linear-gradient(to bottom, #F56E2C, #ED2238, #E8D92B, #6AB773, #008fbe);
+        
+    }
+
+    .navbar li {
+        
+        padding: 1rem 0;
+    }
+    
+}
