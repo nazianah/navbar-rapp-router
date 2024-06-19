@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button'; // Adjust the path as needed
+import Button from './Button';
 import './Layout.css';
 
 const Layout = ({ sections }) => {
@@ -14,7 +14,7 @@ const Layout = ({ sections }) => {
                 <p>{section.subtitle}</p>
                 <h1>{section.title}</h1>
                 
-                <Button text={section.buttonText} link={section.buttonLink} className='primary' />
+                <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
             </div>
           )}
@@ -24,7 +24,7 @@ const Layout = ({ sections }) => {
                 <p>{section.subtitle}</p>
                 <h1>{section.title}</h1>
                 
-                <Button text={section.buttonText} link={section.buttonLink} className='primary' />
+                <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
               <img src={section.imageLink} alt={section.title} className='layout-image' />
             </div>
@@ -35,7 +35,7 @@ const Layout = ({ sections }) => {
                 <p>{section.subtitle}</p>
                 <h1>{section.title}</h1>
                 
-                <Button text={section.buttonText} link={section.buttonLink} className='primary' />
+                <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
               <img src={section.imageLink} alt={section.title} className='layout-image' />
             </div>

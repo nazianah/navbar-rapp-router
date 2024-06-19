@@ -11,7 +11,8 @@ const Home = () => {
       buttonText: 'FIND OUT WHY',
       buttonLink: '/about',
       title: 'We connect precision with empathy.',
-      subtitle: 'ABOUT US'
+      subtitle: 'ABOUT US',
+      className: 'first'
     },
     {
       layoutType: 'layout2',
@@ -19,7 +20,8 @@ const Home = () => {
       buttonText: 'CREATING CONNECTIONS',
       buttonLink: '/work',
       title: 'How we made Mastercard Priceless for a wider audience',
-      subtitle: 'WORK'
+      subtitle: 'WORK',
+      className: 'second'
     },
     {
       layoutType: 'layout3',
@@ -27,7 +29,8 @@ const Home = () => {
       buttonText: 'Find Your Local RAPP',
       buttonLink: '/locations',
       title: 'We have offices all over the world',
-      subtitle: 'LOCATIONS'
+      subtitle: 'LOCATIONS',
+      className: 'third'
     },
     {
       layoutType: 'layout1',
@@ -35,7 +38,8 @@ const Home = () => {
       buttonText: 'Work With Us',
       buttonLink: '/careers',
       title: 'Hello, is it you we`re looking for?',
-      subtitle: 'CAREERS'
+      subtitle: 'CAREERS',
+      className: 'four'
     },
     {
       layoutType: 'layout2',
@@ -43,7 +47,8 @@ const Home = () => {
       buttonText: 'Learn More',
       buttonLink: '/news',
       title: 'RAPP wins Campaign Global Campaign Agency of the Year!',
-      subtitle: 'NEWS'
+      subtitle: 'NEWS',
+      className: 'five'
     }
   ];
   return (

@@ -4,7 +4,7 @@ import './Button.css';
 const Button = ({ text, link, style, className }) => {
   return (
     <a href={link} style={{ textDecoration: 'none', ...style }}>
-      <button className={`button ${className}`}>{text}</button>
+      <button className={`${className}`}>{text}</button>
     </a>
   );
 }
