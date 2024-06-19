@@ -11,6 +11,7 @@ color:white;
   position: absolute;
   top: 48.5%;
   left: 19%;
+  color: white;
 }
 .white button:hover{
   background-color:#FF6B00 ;

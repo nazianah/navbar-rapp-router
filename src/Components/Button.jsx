@@ -1,11 +1,12 @@
-import React from 'react'
-import './Button.css'
-const Button = ({ text, link }) => {
-    return (
-      <a href={link} style={{ textDecoration: 'none' }}>
-        <button className='button'>{text}</button>
-      </a>
-    )
-  }
+import React from 'react';
+import './Button.css';
 
-export default Button
+const Button = ({ text, link, style, className }) => {
+  return (
+    <a href={link} style={{ textDecoration: 'none', ...style }}>
+      <button className={`button ${className}`}>{text}</button>
+    </a>
+  );
+}
+
+export default Button;
