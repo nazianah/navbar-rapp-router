@@ -6,6 +6,9 @@
 .white{
 color:white;
 }
+.white img {
+  margin-top: 69px;
+}
 
 .white button {
   position: absolute;
