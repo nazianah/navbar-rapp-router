@@ -1,11 +1,15 @@
-import React from 'react';
-import 
-
-
-const BannerHomepage = ({ text, link }) => {
+import React from 'react'
+import './BannerHomepage.css'
+const BannerHomepage = ({ imageLink, title, subtitle }) => {
   return (
-    <div>BannerHomepage</div>
-  )
-}
+    <div className="banner-homepage">
+      <img src={imageLink} alt="Banner" className="banner-image" />
+      <div className="banner-text">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        </div>
+    </div>
+  );
+};
 
 export default BannerHomepage;
