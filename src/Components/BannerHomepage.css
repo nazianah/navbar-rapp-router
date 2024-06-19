@@ -4,13 +4,15 @@
 .banner-text {
     position: absolute;
     top: 35%;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 .banner-text h1{
     font-size: 48px;
 }
 .banner-text p{
+    margin-top: 25px;
+    line-height: 1.5;
     font-size: 20px;
     width: 600px;
 }
