@@ -12,7 +12,7 @@ const Home = () => {
       title={"We are RAPP Worldwide"}
       subtitle={"A global precision marketing agency that knows how to speak to one individual, a million at a time."}
     />
-    <Button text="Home" link="https://www.rapp.com/" />
+    <Button text="FIND OUT HOW" link="/about" />
     </div>
     </>
   )

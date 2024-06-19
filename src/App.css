@@ -7,3 +7,13 @@
 color:white;
 }
 
+.white button {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.white button:hover{
+  background-color:#FF6B00 ;
+  border: none;
+  color:black;
+}
