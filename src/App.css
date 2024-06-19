@@ -9,8 +9,8 @@ color:white;
 
 .white button {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 48.5%;
+  left: 19%;
 }
 .white button:hover{
   background-color:#FF6B00 ;
