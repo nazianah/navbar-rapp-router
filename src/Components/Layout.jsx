@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Button from './Button';
 import './Layout.css';
@@ -20,24 +21,24 @@ const Layout = ({ sections }) => {
           )}
           {section.layoutType === 'layout2' && (
             <div className='layout2'>
+              <img src={section.imageLink} alt={section.title} className='layout-image' />
               <div className='layout-content'>
                 <p>{section.subtitle}</p>
                 <h1>{section.title}</h1>
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
-              <img src={section.imageLink} alt={section.title} className='layout-image' />
             </div>
           )}
           {section.layoutType === 'layout3' && (
             <div className='layout3'>
+              <img src={section.imageLink} alt={section.title} className='layout-image' />
               <div className='layout-content'>
                 <p>{section.subtitle}</p>
                 <h1>{section.title}</h1>
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
-              <img src={section.imageLink} alt={section.title} className='layout-image' />
             </div>
           )}
         </div>
