@@ -61,6 +61,7 @@
 
 .layout1 {
   flex-direction: row;
+ height:440px;
 }
 
 .layout2,
@@ -79,11 +80,26 @@
 
 
 }
-.layout1 .layout-content button{
+.layout2 .layout-content button{
   margin-top: 30px;
+
+}
+
+.layout2 .layout-content{
+  position: relative;
+  left: 19%;
+  bottom: 300px;
+  width: 300px;
+  line-height: 1;
 
 
 }
+.layout2 .layout-content button{
+  margin-top: 30px;
+
+}
+
+
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
