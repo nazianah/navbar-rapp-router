@@ -1,81 +1,100 @@
 
 .first{
-    border: 1px solid #FF6B00;
+  border: 1px solid #FF6B00;
 }
 .second{
-    border: 1px solid #E30029;
+  border: 1px solid #E30029;
 }
 .third{
-    border: 1px solid #FFD300;
+  border: 1px solid #FFD300;
 }
 .four{
-    border: 1px solid #C2D500;
+  border: 1px solid #C2D500;
 }
 .five{
-    border: 1px solid #008FBE;
+  border: 1px solid #008FBE;
 }
 .first:hover{
-    background-color:  #FF6B00;
+  background-color:  #FF6B00;
 }
 .second:hover{
-    background-color:  #E30029;
+  background-color:  #E30029;
 }
 .third:hover{
-    background-color:  #FFD300;
+  background-color:  #FFD300;
 }
 .four:hover{
-    background-color:  #C2D500;
+  background-color:  #C2D500;
 }
 .five:hover{
-    background-color:  #008FBE;
+  background-color:  #008FBE;
 }
 
 .layout-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; 
+}
+
+.layout-content {
+  flex: 1; 
   
+}
+.layout-content h1{
+  margin-top: 15px;
+  font-size: 40px;
+  
+}
+
+.layout-image {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+
+.layout1 {
+  flex-direction: row;
+}
+
+.layout2,
+.layout3 {
+  flex-direction: row-reverse;
+}
+.layout1 image{
+  max-width: 50%;
+}
+.layout1 .layout-content{
+  position: relative;
+  left: 19%;
+  bottom: 300px;
+  width: 300px;
+  line-height: 1;
+
+
+}
+.layout1 .layout-content button{
+  margin-top: 30px;
+
+
+}
+@media (max-width: 768px) {
   .layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; 
+    flex-direction: column;
   }
   
-  .layout-content {
-    flex: 1; 
-  }
-  
-  .layout-image {
-    max-width: 100%;
-    margin-top: 15px;
-  }
-  
- 
   .layout1 {
-    flex-direction: row;
+    flex-direction: column; 
   }
   
   .layout2,
   .layout3 {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse; 
   }
-  .layout1 image{
-    max-width: 50%;
-  }
-  @media (max-width: 768px) {
-    .layout {
-      flex-direction: column;
-    }
-    
-    .layout1 {
-      flex-direction: column; 
-    }
-    
-    .layout2,
-    .layout3 {
-      flex-direction: column-reverse; 
-    }
-  }
-  
+}
