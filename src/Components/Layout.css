@@ -45,11 +45,12 @@
 
 .layout-content {
   flex: 1; 
-  
+  background-color: white;
 }
 .layout-content h1{
   margin-bottom: 15px;
   font-size: 40px;
+  background-color: white;
 }
 
 .layout-image {
@@ -81,15 +82,7 @@
 
 
 
-.layout2 .layout-content{
-  position: absolute;
-width:500px;
-height:445px;
-top: 127%;
-left: 27%;
-background-color: white;
 
-}
 
 
 
