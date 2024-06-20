@@ -67,9 +67,7 @@
 .layout3 {
   flex-direction: row-reverse;
 }
-.layout1 image{
-  max-width: 50%;
-}
+
 .layout1 .layout-content{
   position: relative;
   left: 19%;
@@ -86,11 +84,12 @@
 
 .layout2 .layout-content{
   position: relative;
-  left: 19%;
-  bottom: 300px;
-  width: 300px;
+  right: 47%;
+  bottom: 456px;
+  height: 433px;
+  margin-top: 1%;
   line-height: 1;
-
+background-color: white;
 
 }
 .layout2 .layout-content button{
