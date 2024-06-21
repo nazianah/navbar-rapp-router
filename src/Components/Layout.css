@@ -1,18 +1,23 @@
 
 .first{
   border: 1px solid #FF6B00;
+  margin-top: 35px;
 }
 .second{
   border: 1px solid #E30029;
+  margin-top: 35px;
 }
 .third{
   border: 1px solid #FFD300;
+  margin-top: 35px;
 }
 .four{
-  border: 1px solid #C2D500;
+  border: 1px solid #C2D500; 
+  margin-top: 35px;
 }
 .five{
   border: 1px solid #008FBE;
+  margin-top: 35px;
 }
 .first:hover{
   background-color:  #FF6B00;
@@ -30,81 +35,59 @@
   background-color:  #008FBE;
 }
 
-.layout-container {
+.layout {
+  position: relative; /* Set position relative for stacking context */
+  width: 100%;
+  margin-bottom: 15px; /* Space between sections */
+  overflow: hidden; /* Clears floats inside */
+}
+
+.layout1, .layout2, .layout3 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.layout {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px; 
+  text-align: left;
+  position: relative; /* Ensure stacking order works */
 }
 
-.layout-content {
-  flex: 1; 
-  
+.layout-content1,.layout-content2,.layout-content3 {
+  background-color: white; /* White background with some transparency */
+ 
+  height: 100%;
+  width: 80%; /* Adjust width as needed */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center the content */
+  z-index: 1; /* Place content above the image */
+  text-align: left; /* Center text */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
-.layout-content h1{
-  margin-bottom: 15px;
-  font-size: 40px;
+
+.layout-content1 {
+  padding: 75px 166px 90px 760px;
+  width: 60%;
+  left: 10%;
+  height: 101%;
+}
+
+.layout-content2 {
+  padding: 75px 225px 100px 700px;
+  width: 70%;
+  left: 18%;
+  height: 101%;
+}
+
+.layout-content3 {
+  padding: 100px 176px 117px 1140px;
+  width: 87%;
+  left: 3%;
+  height: 101%;
 }
 
 .layout-image {
-  max-width: 100%;
-  margin-top: 15px;
-}
-
-
-.layout1 {
-  flex-direction: row;
- height:440px;
-}
-
-.layout2,
-.layout3 {
-  flex-direction: row-reverse;
-}
-
-.layout1 .layout-content{
-  position: relative;
-  left: 19%;
-  bottom: 300px;
-  width: 300px;
-  line-height: 1;
-
-
-}
-
-
-
-
-.layout2 .layout-content{
-  position: absolute;
-width:950px;
-height:435px;
-top: 127%;
-left: 0.20%;
-background-color: white;
-
-}
-
-
-
-
-@media (max-width: 768px) {
-  .layout {
-    flex-direction: column;
-  }
-  
-  .layout1 {
-    flex-direction: column; 
-  }
-  
-  .layout2,
-  .layout3 {
-    flex-direction: column-reverse; 
-  }
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 0; /* Place image behind content */
 }

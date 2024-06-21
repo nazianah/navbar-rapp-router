@@ -5,11 +5,13 @@
 }
 .white{
 color:white;
-}
-.white img {
-  margin-top: 69px;
-}
 
+
+}
+.white img{
+  margin-top: 69px;
+  margin-bottom: 12px;
+}
 .white button {
   position: absolute;
   top: 48.5%;
