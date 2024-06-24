@@ -8,8 +8,8 @@
     z-index: 2;
     padding :10px 10px ;
 } */
-.footer {
-    color: aliceblue;
+/* .footer {
+    color: white;
     text-align: center;
     background-color: #F56E2C;
     font-size: 15px;
@@ -31,7 +31,23 @@
 
 .footer ul li a {
     color:white;
+} */
+
+
+.footer{
+    background-color: #F56E2C;
+    display:flex;
+    justify-content: center;
+    height:15vh;
+    color: white;
+
 }
+.footer ul  {
+    list-style-type: none ;
+    
+ }
+.footer ul li a {
+    text-decoration: none;
+    color: white;
 
-
-
+}
