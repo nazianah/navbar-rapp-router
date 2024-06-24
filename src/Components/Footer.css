@@ -1,30 +1,34 @@
-
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: Row;
     align-items: center;
-    background-color: white;
-    padding: 20px;
+    background-color: #fd7e14 ;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .footer h2 {
-    margin-bottom: 30px; /* Space between the header and the first set of list items */
+    width:40%;
+    padding-left: 300px;
+    margin-bottom: 40px; /* Space between the header and the first set of list items */
     color: white; /* Setting the color of the h2 text to black */
+    margin-top: 2px;
 }
 
 .footer ul {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 10px 0; /* Vertical spacing between sets of list items */
-    width: 100%;
+    margin: 5px 0; /* Vertical spacing between sets of list items */
+    width: 60%;
     justify-content: center; /* Centering the list items */
-    background-color:#F56E2C ;
-}
+    Flex-direction :column;
+    padding-right: 150px;
 
+}
 .footer ul li {
     color: white;
-    margin: 0 10px; /* Horizontal spacing between list items */
+    margin: 0 5px; /* Horizontal spacing between list items */
 }
 
 .footer ul li a {
