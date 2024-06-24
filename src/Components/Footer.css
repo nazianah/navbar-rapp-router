@@ -33,8 +33,8 @@
     color:white;
 } */
 
-
-.footer{
+///////
+/* .footer{
     background-color: #F56E2C;
     display:flex;
     justify-content: center;
@@ -50,4 +50,52 @@
     text-decoration: none;
     color: white;
 
+} */
+
+
+//////
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
 }
+
+.footer h2 {
+    margin-bottom: 20px; /* Space between the header and the first set of list items */
+    color: white; /* Setting the color of the h2 text to black */
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Vertical spacing between sets of list items */
+    width: 100%;
+    justify-content: center; /* Centering the list items */
+    background-color:#F56E2C ;
+}
+
+.footer ul li {
+    color: white;
+    margin: 0 10px; /* Horizontal spacing between list items */
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+.footer ul li a:hover {
+color:rgb(129, 22, 22);
+
+}
+
+
+
+
+
