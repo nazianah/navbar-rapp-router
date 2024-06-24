@@ -3,7 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
+        <div className="footer">
+            <ul>
                 <li>
                 Ready to get in touch?
                 </li>
@@ -19,7 +20,8 @@ const Footer = () => {
                 <li>
                 <a href="mailto:MediaInquiries@rapp.com">MediaInquiries@rapp.com</a>
                 </li>
-             </div>
+            </ul>
+        </div>
     )
 }
 
