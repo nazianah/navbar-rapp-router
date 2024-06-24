@@ -7,6 +7,7 @@ import Location from './Pages/Location';
 import Work from './Pages/Work';
 import News from './Pages/News';
 import About from './Pages/About';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/locations" element={<Location />} />
           <Route path="/news" element={<News />} />
         </Routes>
+        <Footer/>
       </>
     </Router>
   );
