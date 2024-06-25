@@ -51,12 +51,15 @@ const Home = () => {
       className: 'five'
     }
   ];
+  const isMobile = window.innerWidth <= 425;
+  const link = isMobile ? "https://www.rapp.com/media/fmcnnai5/home_banner2_mb_640x800.jpg" : "https://www.rapp.com/media/3wmfa1w5/home_banner2_dt_3200x1100.jpg";
+
   return (
     <>
     <div className='white'>
     <BannerHomepage
-      imageLink={"https://www.rapp.com/media/k1qcbewy/home_banner5_dt_3200x1100.jpg"}
-      title={"We are RAPP Worldwide"}
+      imageLink={link}
+      title={'We are RAPP Worldwide'}
       subtitle={"A global precision marketing agency that knows how to speak to one individual, a million at a time."}
     />
     <Button text="FIND OUT HOW" link="/about" />

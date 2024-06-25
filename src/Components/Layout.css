@@ -35,6 +35,9 @@
   background-color:  #008FBE;
 }
 
+h1{
+  font-size: 50px;
+}
 .layout {
   position: relative; /* Set position relative for stacking context */
   width: 100%;
@@ -58,36 +61,50 @@
   width: 80%; /* Adjust width as needed */
   position: absolute;
   top: 50%; /* Center vertically */
+  
   transform: translate(-50%, -50%); /* Center the content */
   z-index: 1; /* Place content above the image */
   text-align: left; /* Center text */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
-
 .layout-content1 {
-  padding: 75px 166px 90px 760px;
+  padding: 45px 20px 0px 760px;
   width: 60%;
   left: 10%;
   height: 101%;
 }
-
 .layout-content2 {
-  padding: 75px 225px 100px 700px;
+  padding: 50px 23px 100px 700px;
   width: 70%;
   left: 18%;
   height: 101%;
 }
-
 .layout-content3 {
-  padding: 100px 176px 117px 1140px;
+  padding: 100px 85px 117px 1140px;
   width: 87%;
   left: 3%;
   height: 101%;
 }
-
 .layout-image {
   width: 100%;
   height: auto;
   display: block;
   z-index: 0; /* Place image behind content */
+}
+p{
+  font-weight: 600;
+  font-size:14px;
+}
+@media (max-width: 768px) {
+  .layout-content1, .layout-content2, .layout-content3 {
+    width: 100%; 
+    padding: 20px; 
+    position: static;
+    transform: none;
+
+  }
+  h1{
+    font-size: 27px;
+  }
+  
 }

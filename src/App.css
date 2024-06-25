@@ -23,3 +23,16 @@ color:white;
   border: none;
   color:black;
 }
+.white p{
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .white button {
+    position: static;
+    color: black;
+    border-color: #FF6B00;
+    transform: none;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+}
