@@ -1,11 +1,14 @@
 import React from 'react'
-import Button from '../Components/Button'
+import BannerHomepage from '../Components/BannerHomepage'
 const Careers = () => {
   return (
     <>
-    <div className='center'>
-    <h1>This is Careers page</h1>
-    <Button text="Careers" link="https://www.rapp.com/careers/"/>
+     <div className='Careers'>
+     <BannerHomepage
+      imageLink={"https://www.rapp.com/media/mnvlqfhk/careers-3200x1100-v1.jpg"}
+      title={"We are fearless superconnectors. Are you?"}
+      subtitle={""}
+    />
     </div>
     </>
   )

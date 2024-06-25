@@ -1,57 +1,76 @@
 .banner-homepage {
-    position: relative; /* Ensure the container establishes a positioning context */
-    max-width: 100%; /* Ensure the container does not exceed its parent's width */
-    overflow: hidden; /* Hide any overflow from the image */
-   
-  }
-  
-  .banner-homepage img {
-    width: 100%; /* Ensure the image spans the full width of its container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove any extra spacing */
-  }
-  
+  position: relative; /* Ensure the container establishes a positioning context */
+  max-width: 100%; /* Ensure the container does not exceed its parent's width */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.banner-homepage img {
+  width: 100%; /* Ensure the image spans the full width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra spacing */
+}
+
+.banner-text {
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+  font-size: 48px;
+}
+
+.banner-text p {
+  margin-top: 25px;
+  line-height: 1.5;
+  font-size: 20px;
+  width: 600px; /* Initial width for desktop */
+}
+.line {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 723px;
+  margin-left: 12%;
+  background: linear-gradient(180deg, 
+    #FF6B00 0%,
+    #E30029 20%,
+    #FFD300 40%,
+    #C2D500 60%,
+    #008FBE 80%,
+    #FF6B00 100%);
+  background-size: 100% 600%; /* This will cover the entire height */
+  background-position: top; /* Start the gradient from the top */
+  animation: colorChange 10s linear infinite reverse; /* Change color every 10 seconds */
+}
+
+@keyframes colorChange {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
+
+@media (max-width: 768px) {
   .banner-text {
-    position: absolute;
-    top: 37%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Reset position */
+    top: auto;
+    left: auto;
+    transform: none;
+    
+    padding: 20px; /* Add padding */
+    color: black;
   }
-  
+
   .banner-text h1 {
-    font-size: 48px;
+    font-size: 42px;
+    
   }
-  
+
   .banner-text p {
-    margin-top: 25px;
-    line-height: 1.5;
-    font-size: 20px;
-    width: 600px; /* Initial width for desktop */
+    font-size: 16px;
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
   }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .banner-text {
-      position: relative; /* Reset position */
-      top: auto;
-      left: auto;
-      transform: none;
-      
-      padding: 20px; /* Add padding */
-      color: black;
-    }
-  
-    .banner-text h1 {
-      font-size: 42px;
-      
-    }
-  
-    .banner-text p {
-      font-size: 16px;
-      width: 100%; /* Full width on mobile */
-      max-width: 100%; /* Ensure it doesn't exceed the container width */
-      margin-left: auto; /* Center align */
-      margin-right: auto; /* Center align */
-    }
-  }
-  
+}

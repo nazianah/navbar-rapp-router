@@ -31,7 +31,7 @@ const Layout = ({ sections }) => {
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
-              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 50}%` }}>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 60}%` }}>
                
               </div>
             </div>
@@ -45,7 +45,7 @@ const Layout = ({ sections }) => {
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
-              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 30}%` }}>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 40}%` }}>
                
               </div>
             </div>
@@ -59,7 +59,7 @@ const Layout = ({ sections }) => {
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
-              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 20}%` }}>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 30}%` }}>
                
               </div>
             </div>
