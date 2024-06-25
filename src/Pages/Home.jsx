@@ -12,6 +12,7 @@ const Home = () => {
       buttonLink: '/about',
       title: 'We connect precision with empathy.',
       subtitle: 'ABOUT US',
+      gradient: 'gradient1',
       className: 'first'
     },
     {
@@ -21,6 +22,7 @@ const Home = () => {
       buttonLink: '/work',
       title: 'How we made Mastercard Priceless for a wider audience',
       subtitle: 'WORK',
+      gradient: 'gradient2',
       className: 'second'
     },
     {
@@ -30,6 +32,7 @@ const Home = () => {
       buttonLink: '/locations',
       title: 'We have offices all over the world',
       subtitle: 'LOCATIONS',
+      gradient: 'gradient3',
       className: 'third'
     },
     {
@@ -39,6 +42,7 @@ const Home = () => {
       buttonLink: '/careers',
       title: 'Hello, is it you we`re looking for?',
       subtitle: 'CAREERS',
+      gradient: 'gradient4',
       className: 'four'
     },
     {
@@ -48,6 +52,7 @@ const Home = () => {
       buttonLink: '/news',
       title: 'RAPP wins Campaign Global Campaign Agency of the Year!',
       subtitle: 'NEWS',
+      gradient: 'gradient5',
       className: 'five'
     }
   ];

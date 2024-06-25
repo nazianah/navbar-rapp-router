@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from './Button';
 import './Layout.css';
 
 const Layout = ({ sections }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className='layout-container'>
       {sections.map((section, index) => (
@@ -16,6 +31,9 @@ const Layout = ({ sections }) => {
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 100}%` }}>
+               
+              </div>
             </div>
           )}
           {section.layoutType === 'layout2' && (
@@ -27,6 +45,9 @@ const Layout = ({ sections }) => {
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
               </div>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 100}%` }}>
+               
+              </div>
             </div>
           )}
           {section.layoutType === 'layout3' && (
@@ -37,6 +58,9 @@ const Layout = ({ sections }) => {
                 <h1>{section.title}</h1>
                 
                 <Button text={section.buttonText} link={section.buttonLink} className={section.className} />
+              </div>
+              <div className={`gradient ${section.gradient}`} style={{ height: `${(scrollPosition / window.innerHeight) * 100}%` }}>
+               
               </div>
             </div>
           )}

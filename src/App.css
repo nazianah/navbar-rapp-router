@@ -26,6 +26,57 @@ color:white;
 .white p{
   font-weight: 400;
 }
+.gradient1{
+  position: absolute;
+  
+  top: 0;
+  width: 10px;
+
+  height: 100%;
+  background: linear-gradient(180deg, #FF6B00, #FF6B00);
+  margin-right: 19%;
+}
+.gradient2{
+  position: absolute;
+  background: linear-gradient(180deg, #E30029, #E30029);
+  top: 0;
+  width: 19px;
+
+  height: 100%;
+  margin-left: 6%;
+}
+
+.gradient3{
+  position: absolute;
+  background: linear-gradient(180deg, #FFD300, #FFD300);
+  top: 0;
+  width: 19px;
+
+  height: 100%;
+  margin-right: 7%;
+}
+
+.gradient4{
+  position: absolute;
+  background: linear-gradient(180deg, #C2D500, #C2D500);
+  top: 0;
+  width: 20px;
+
+  height: 100%;
+  margin-right: 20%;
+}
+
+.gradient5{
+  position: absolute;
+  background: linear-gradient(180deg, #008FBE, #008FBE);
+  top: 0;
+  width: 19px;
+
+  height: 100%;
+  margin-left: 6%;
+}
+
+
 @media (max-width: 768px) {
   .white button {
     position: static;
