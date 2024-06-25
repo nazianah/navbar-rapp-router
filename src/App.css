@@ -86,8 +86,8 @@ color:white;
     margin-left: 20px;
     margin-bottom: 40px;
   }
-}
-
-.banner-text h1 {
-color:white;
+  .gradient1,.gradient2,.gradient3,.gradient4,.gradient5{
+    left: 0;
+    margin-left: 0%;
+  }
 }
