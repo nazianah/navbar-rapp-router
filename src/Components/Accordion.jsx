@@ -3,24 +3,28 @@ import './Accordion.css';
 import Button from './Button'; // Import the Button component
 
 const Accordion = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndices, setActiveIndices] = useState([]);
 
   const toggleAccordion = (index) => {
-    setActiveIndex(prevIndex => (prevIndex === index ? null : index));
+    if (activeIndices.includes(index)) {
+      setActiveIndices(activeIndices.filter(i => i !== index));
+    } else {
+      setActiveIndices([...activeIndices, index]);
+    }
   };
 
   return (
     <div className="accordion">
       {items.map((item, index) => (
         <div key={index} className="accordion-item">
-          <div className="accordion-title" onClick={() => toggleAccordion(index)}>
+          <div className="accordion-title" onClick={() => toggleAccordion(index)} role="button" tabIndex="0">
             {item.title}
-            <span className={`accordion-arrow ${activeIndex === index ? 'active' : ''}`}>
-              {activeIndex === index ? '▲' : '▼'}
+            <span className={`accordion-arrow ${activeIndices.includes(index) ? 'active' : ''}`}>
+              {activeIndices.includes(index) ? '▲' : '▼'}
             </span>
           </div>
-          {activeIndex === index && (
-            <div className={`accordion-content ${activeIndex === index ? 'active' : ''}`}>
+          {activeIndices.includes(index) && (
+            <div className={`accordion-content ${activeIndices.includes(index) ? 'active' : ''}`}>
               <p>{item.content}</p>
               {item.button && <Button text={item.button.text} link={item.button.link} className={item.button.className} />}
             </div>
