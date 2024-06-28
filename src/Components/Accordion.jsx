@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Accordion.css';
+import Button from './Button'; // Import the Button component
 
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -19,11 +20,9 @@ const Accordion = ({ items }) => {
             </span>
           </div>
           {activeIndex === index && (
-            <div className="accordion-content">
+            <div className={`accordion-content ${activeIndex === index ? 'active' : ''}`}>
               <p>{item.content}</p>
-              {item.button && (
-                <button>{item.button}</button>
-              )}
+              {item.button && <Button text={item.button.text} link={item.button.link} className={item.button.className} />}
             </div>
           )}
         </div>
