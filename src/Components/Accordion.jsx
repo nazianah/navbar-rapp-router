@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Accordion.css';
-import Button from './Button'; // Import the Button component
+import Button from './Button';
 
 const Accordion = ({ items }) => {
   const [activeIndices, setActiveIndices] = useState([]);
